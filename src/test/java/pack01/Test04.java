@@ -36,7 +36,7 @@ public class Test04 extends base {
 		Select s=new Select(e.selectDrop());
 		s.selectByVisibleText("Cell Phones & Accessories");
 		e.search().click();
-		Assert.assertTrue(true);
+		Assert.assertTrue(false);
 	}
 
 	@AfterTest
