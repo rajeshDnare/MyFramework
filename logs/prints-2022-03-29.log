@@ -1,0 +1,8 @@
+22:30:39.970 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x18f426fe0a9b26eb
+22:30:46.688 [main] INFO  pack01.Test01 - Driver Inovoked
+22:30:47.256 [main] INFO  pack01.Test01 - Text Typed
+22:30:47.304 [main] INFO  pack01.Test01 - Options Selected
+22:30:47.811 [main] INFO  pack01.Test01 - Options Selected
+22:30:48.033 [main] INFO  pack01.Test01 - Driver closed
+22:31:03.859 [main] INFO  pack01.Test02 - Driver Invoked
+22:31:13.891 [main] INFO  pack01.Test02 - Test03 done

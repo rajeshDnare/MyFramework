@@ -1,0 +1,6 @@
+13:30:59.987 [AsyncHttpClient-1-7] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+13:31:00.659 [main] INFO  pack01.Test02 - Driver closed
+13:31:13.086 [main] INFO  pack01.Test03 - Driver Invoked
+13:31:13.862 [main] INFO  pack01.Test03 - Alert Accepted
+13:31:13.865 [AsyncHttpClient-1-2] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+13:31:14.237 [main] INFO  pack01.Test03 - Driver closed

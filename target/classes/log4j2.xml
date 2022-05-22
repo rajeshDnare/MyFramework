@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<!--
+**properties tag is used for specifuing the file details
+**after ""basePath">" file pathis provided. basepath is till the projet folder
+-->
+	<Properties>
+		<Property name="basePath">./logs</Property>
+	</Properties>
+<!--
+**<SizeBasedTriggeringPolicy is to specify at what size the new file is to be created
+**FilePattern is used to specify the name of the new created file.
+-->
+	<Appenders>
+		<RollingFile name="File" fileName="${basePath}/prints.log" filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="500" />
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+<!--
+**additivity tag is to avoid double priting of the lags. The file is executed two time, one for each Logger and Root. Hence logs get double printed.
+**additivity="false" avoids this
+**below logger setting is applicable to the package only whose name is written in Logger name
+		<Logger name="pack02.demo02" level="trace" additivity="false">
+			<AppenderRef ref="File" />
+		</Logger>
+-->
+<!--
+**Root level setting is applicable to all the project, all the packages, except which specified in Logger setting above
+-->
+		<Root level="trace">
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>
